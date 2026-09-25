@@ -20,8 +20,11 @@ Columns: Date, Brand, Model, RAM, Storage, OS, Price, Quantity, Total_Sales, Pro
 ## 5. DAX Measures
 dax
 Total Sales = SUM('Sales'[Total_Sales])
+
 Total Profit = SUM('Sales'[Profit])
+
 Units Sold = SUM('Sales'[Quantity])
+
 Profit Margin = DIVIDE([Total Profit], [Total Sales])
 
 ## 6. Key Insights
